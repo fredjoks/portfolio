@@ -1,7 +1,13 @@
 .container {
     max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
+    padding: 1rem;
+    margin: 4rem auto 6rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    z-index: 1;
+    background-color: #f7f8fb;
   }
   
   .header {
