@@ -7,7 +7,7 @@
     overflow: hidden;
     border-radius: 15px;
     z-index: 1;
-    background-color: #f7f8fb;
+    background-color: rgba(247, 248, 251);
   }
   
   .header {

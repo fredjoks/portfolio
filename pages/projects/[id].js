@@ -16,13 +16,20 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-          <Link href={postData.link}>
-            <a target='_blank'>source code</a>
+          <Link href={postData.repo}>
+            <a target='_blank'>Source code</a>
           </Link>
+          {postData.live && (<Link href={postData.live}>
+            <a target='_blank'>Live</a>
+          </Link>)}
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <Link href={postData.link}>
-            <a target='_blank'>source code</a>
-          </Link>
+        <Link href={postData.repo}>
+            <a target='_blank'>Source code</a>
+        </Link>
+        {postData.live && (<Link href={postData.live}>
+            <a target='_blank'>Live</a>
+        </Link>)}
+        
       </article>
     </Layout>
   );

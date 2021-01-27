@@ -1,6 +1,7 @@
 ---
 title: 'PDF to Mass Mail'
-link: 'https://github.com/fredjoks/mass-mail'
+repo: 'https://github.com/fredjoks/mass-mail'
+live: ''
 date: '2021-01-26'
 ---
 **This project was made for a friend to save approximately 6 hours of work on monthly basis*
@@ -36,3 +37,9 @@ PDF as an attachment, assigned by mailing list.
 ![Send all](/images/sendall.gif)
 7. See the results! ✨
 ![Result](/images/result.gif)
+### What I learned:
+I learned how to go from an **idea to a working solution**.
+This project gave me good practice in **extracting data from filesystem**
+using regex, os and PyPDF2 libraries.
+Client appointments provided me with **fresh new insight** into
+dealing with user behaviour and expectations.
