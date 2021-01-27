@@ -4,7 +4,7 @@
     margin: 0 auto 6rem;
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: baseline;
     justify-content: center;
   }
   
@@ -12,6 +12,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 25rem;
+    flex-shrink: 0;
+    z-index: 2;
   }
   
   .headerImage {
@@ -23,7 +26,28 @@
     width: 8rem;
     height: 8rem;
   }
-  
-  .backToHome {
-    margin: 3rem 0 0;
+
+  .component {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgba(247, 248, 251);
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .backToHome a{
+    color: #2c2fe8;
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .component {
+      width: clamp(320px, 80%, 100%);
+    }
   }

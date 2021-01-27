@@ -53,21 +53,23 @@
 
   .btnGroup {
     padding: 1rem 0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 4rem;
   }
 
   .liveBtn {
-    float: right;
+    color: #5cb85c;
+    width: 1.25rem;
   }
 
-  .repoBtn,
-  .liveBtn {
-    padding: .5rem .5rem 0;
-    margin: 0 5px 0 0;
+  .repoBtn {
+    width: 1.5rem;
+    color: #F1502F
   }
 
-  .titles,
-  .repoBtn,
-  .liveBtn {
+  .titles {
     --linkColor: #2c2fe8;
     background: linear-gradient(to bottom, var(--linkColor) 0%, var(--linkColor) 100%);
     background-position: 0 100%;
@@ -78,33 +80,11 @@
     padding: 0 0 .1rem 0;
   }
   
-  .titles:hover,
-  .repoBtn:hover,
-  .liveBtn:hover {
+  .titles:hover {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%232c2fe8' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
     background-position: 0 100%;
     background-size: auto 6px;
     background-repeat: repeat-x;
     text-decoration: none;
   }
-
-  .component {
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: rgba(247, 248, 251);
-    padding: 2rem;
-    margin: 2rem;
-  }
-  
-  .homeComponent {
-    max-width: 30vw;
-  }
-
-  .projectComponent {
-    max-width: 60vw;
-  }
-
-
-
   
