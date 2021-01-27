@@ -88,6 +88,23 @@
     text-decoration: none;
   }
 
+  .component {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgba(247, 248, 251);
+    padding: 2rem;
+    margin: 2rem;
+  }
+  
+  .homeComponent {
+    max-width: 30vw;
+  }
+
+  .projectComponent {
+    max-width: 60vw;
+  }
+
 
 
   

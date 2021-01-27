@@ -24,7 +24,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={`${styles.header} ${utilStyles.headingMd} ${utilStyles.homeComponent} ${utilStyles.component}`}>
         {home ? (
           <>
             <img
@@ -52,8 +52,11 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
+        <section>
+          <p>I am progress-oriented optimist. Let's build a better future by being at least a bit less wrong than we were the day before.</p>
+        </section>
       </header>
-      <main>{children}</main>
+      <main className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.component}`}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">

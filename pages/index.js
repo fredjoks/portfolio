@@ -20,10 +20,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>I am progress-oriented optimist. Let's build a better future by being at least a bit less wrong than we were the day before.</p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${utilStyles.projectComponent}`}>
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (

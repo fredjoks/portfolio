@@ -1,13 +1,11 @@
 .container {
-    max-width: 36rem;
+    max-width: 100%;
     padding: 1rem;
-    margin: 4rem auto 6rem;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    z-index: 1;
-    background-color: rgba(247, 248, 251);
+    margin: 0 auto 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
   }
   
   .header {
