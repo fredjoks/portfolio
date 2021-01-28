@@ -24,7 +24,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={`${styles.header} ${utilStyles.headingMd} ${styles.homeComponent} ${styles.component}`}>
+      <header className={`${styles.header} ${utilStyles.headingMd} ${styles.headerComponent} ${styles.component}`}>
         {home ? (
           <>
             <img
@@ -33,6 +33,7 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <small className={utilStyles.lightText}>Junior Software Developer <a href='https://khk.ee/eriala/noorem-tarkvaraarendaja-veebispetsialist/' target='_blank'>@TartuKHK</a></small>
           </>
         ) : (
           <>
@@ -53,10 +54,13 @@ export default function Layout({ children, home }) {
           </>
         )}
         <section>
-          <p>I am progress-oriented optimist. Let's build a better future by being at least a bit less wrong than we were the day before.</p>
+          <p>I am progress-oriented optimist.
+            Let's <strong>build a better future</strong> by being at least a bit less wrong than we were the day before.  
+
+          </p>
         </section>
       </header>
-      <main className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component} ${styles.content}`}>
+      <main className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component} ${styles.projectComponent} ${styles.content}`}>
         {children}
         {!home && (
           <div className={styles.backToHome}>
@@ -66,6 +70,21 @@ export default function Layout({ children, home }) {
           </div>
         )}
       </main>
+      <div className={styles.break}></div>
+      <section className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component} ${styles.projectComponent} ${styles.content}`}>
+            <h2 className={utilStyles.headingLg}>Recent activity</h2>
+              <ul className={utilStyles.list}>
+                  <li className={utilStyles.listItem}>
+                    📘 <strong>Clean Code</strong> by Robert C. Martin
+                  </li>
+                  <li className={utilStyles.listItem}>
+                    📘 <strong>Don't Make Me Think</strong> by Steve Krug
+                  </li>
+                  <li className={utilStyles.listItem}>
+                    🏆 <strong>#1</strong> at JA Eesti's hackathon <strong>"9h enterprise"</strong> as Team Leader
+                  </li>
+              </ul>
+      </section>
     </div>
   );
 }
