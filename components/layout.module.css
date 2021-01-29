@@ -61,7 +61,11 @@
   }
 
   .headerIntroduction {
-    padding: 1rem;
+    padding: 2rem;
+  }
+
+  .headerIntroduction :nth-child(1) {
+    margin-top: 0;
   }
   
   .headerHomeImage {

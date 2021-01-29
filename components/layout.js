@@ -70,7 +70,7 @@ export default function Layout({ children, home }) {
           <p>
             In my studies I have mostly worked with <strong>HTML</strong>, <strong>CSS</strong> and <strong>Javascript</strong>. 
             My database management skills include <strong>PHP</strong> and <strong>MySQL</strong>. 
-            Im facinated by <strong>Python</strong> and <strong>React</strong>.
+            Automation with <strong>Python</strong> fascinates me.
           </p>
           <p>
             <strong>Visual Studio Code</strong> combined with <strong>Git Bash</strong> is my main tool.
