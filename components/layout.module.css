@@ -29,6 +29,12 @@
 
   .headerHomeCredentials {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerHomeCredentials > * {
+    margin: 0.5rem 0 0 0;
   }
 
   .headerCredentials {
@@ -61,6 +67,17 @@
   .headerHomeImage {
     width: 10rem;
     height: 10rem;
+  }
+
+  .headerLinks {
+    list-style: none;
+    padding: 0 0;
+    font-size: 1.5rem;
+  }
+
+  .headerLinks li {
+    display: inline;
+    padding: 0 1rem 0 0;
   }
 
   .component {

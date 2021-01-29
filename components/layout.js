@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const name = 'Fred Jõks';
 export const siteTitle = 'Fred Jõks';
@@ -36,6 +36,10 @@ export default function Layout({ children, home }) {
             <div className={styles.headerHomeCredentials}>
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
               <small className={utilStyles.lightText}>Junior Software Developer <a href='https://khk.ee/eriala/noorem-tarkvaraarendaja-veebispetsialist/' target='_blank'>@TartuKHK</a></small>
+              <ul className={styles.headerLinks}>
+                <li><a href='https://github.com/fredjoks' target='_blank'><i className="fab fa-github"></i></a></li>
+                <li><a href='https://www.linkedin.com/in/fredjoks/' target='_blank'><i className="fab fa-linkedin"></i></a></li>
+              </ul>
             </div>
           </section>
         ) : (
