@@ -58,6 +58,7 @@
     width: 7rem;
     height: 7rem;
     min-width: 7rem;
+    border-radius: 15px 0 0 15px !important;
   }
 
   .headerIntroduction {
