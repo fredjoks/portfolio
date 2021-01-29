@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <section className={styles.headerHomeContainer}>
             <img
-              src="/images/profile.jpg"
+              src="/images/profile.webp"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -47,7 +47,7 @@ export default function Layout({ children, home }) {
               <Link href="/">
                 <a>
                   <img
-                    src="/images/profile.jpg"
+                    src="/images/profile.webp"
                     className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                     alt={name}
                   />
