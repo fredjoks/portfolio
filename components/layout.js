@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const name = 'Fred Jõks';
 export const siteTitle = 'Fred Jõks';
@@ -26,39 +27,54 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={`${styles.header} ${utilStyles.headingMd} ${styles.headerComponent} ${styles.component}`}>
         {home ? (
-          <>
+          <section className={styles.headerHomeContainer}>
             <img
               src="/images/profile.jpg"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <small className={utilStyles.lightText}>Junior Software Developer <a href='https://khk.ee/eriala/noorem-tarkvaraarendaja-veebispetsialist/' target='_blank'>@TartuKHK</a></small>
-          </>
+            <div className={styles.headerHomeCredentials}>
+              <h1 className={utilStyles.heading2Xl}>{name}</h1>
+              <small className={utilStyles.lightText}>Junior Software Developer <a href='https://khk.ee/eriala/noorem-tarkvaraarendaja-veebispetsialist/' target='_blank'>@TartuKHK</a></small>
+            </div>
+          </section>
         ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+            <section className={styles.headerContainer}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a>
+                  <img
+                    src="/images/profile.jpg"
+                    className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                    alt={name}
+                  />
+                </a>
               </Link>
-            </h2>
-          </>
+              <div className={styles.headerCredentials}>
+                <h2 className>
+                  <Link href="/">
+                    <a className={utilStyles.colorInherit}>{name}</a>
+                  </Link>
+                </h2>
+                <small className={utilStyles.lightText}>Junior Software Developer <a href='https://khk.ee/eriala/noorem-tarkvaraarendaja-veebispetsialist/' target='_blank'>@TartuKHK</a></small>
+              </div>
+            </section>
         )}
-        <section>
-          <p>I am progress-oriented optimist.
-            Let's <strong>build a better future</strong> by being at least a bit less wrong than we were the day before.  
-
+        {home && (<section className={styles.headerIntroduction}>
+          <p>
+            <q>I am progress-oriented optimist.</q>
           </p>
-        </section>
+          <p>
+            In my studies I have mostly worked with <strong>HTML</strong>, <strong>CSS</strong> and <strong>Javascript</strong>. 
+            My database management skills include <strong>PHP</strong> and <strong>MySQL</strong>. 
+            Im facinated by <strong>Python</strong> and <strong>React</strong>.
+          </p>
+          <p>
+            <strong>Visual Studio Code</strong> combined with <strong>Git Bash</strong> is my main tool.
+          </p>
+          <p>
+            <strong> Let's build a better future</strong> by being at least a bit less wrong than we were the day before. 
+          </p>
+        </section>)}
       </header>
       <main className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component} ${styles.projectComponent} ${styles.content}`}>
         {children}
@@ -82,6 +98,9 @@ export default function Layout({ children, home }) {
                   </li>
                   <li className={utilStyles.listItem}>
                     🏆 <strong>#1</strong> at JA Eesti's hackathon <strong>"9h enterprise"</strong> as Team Leader
+                  </li>
+                  <li className={utilStyles.listItem}>
+                    📘 <strong>Algorithms to Live By</strong> by Brian Christian, Tom Griffiths 
                   </li>
               </ul>
       </section>

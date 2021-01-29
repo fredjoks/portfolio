@@ -4,7 +4,7 @@
     margin: 0 auto 6rem;
     display: flex;
     flex-direction: row;
-    align-items: stetch;
+    align-items: stretch;
     justify-content: start;
     flex-wrap: wrap;
   }
@@ -12,19 +12,55 @@
   .header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     width: 25rem;
     z-index: 2;
+    padding: 0 !important;
   }
-  
+
+  .headerHomeContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .headerContainer {
+    display: flex;
+  }
+
+  .headerHomeCredentials {
+    padding: 1rem;
+  }
+
+  .headerCredentials {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem 1rem 0;
+  }
+
+  .headerCredentials > * {
+    margin: 0 0;
+  }
+
+  .headerCredentials small {
+    font-size: clamp(.2rem, .8rem, 1rem);
+    text-align: right;
+    margin: 0 0 0 0;
+  }
+
   .headerImage {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
+    min-width: 7rem;
+  }
+
+  .headerIntroduction {
+    padding: 1rem;
   }
   
   .headerHomeImage {
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
   }
 
   .component {
@@ -40,6 +76,7 @@
 
   .backToHome a{
     color: #2c2fe8;
+    line-height: 4rem;
   }
 
   .break {

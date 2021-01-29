@@ -8,5 +8,7 @@ date: '2020-10-19'
 ### What I learned
 This project was part of a brief introduction into React.
 I was introduced to **React hooks**.
-### Preview 👀
-<img src="/images/markdown-preview.gif" alt="Random Quote Machine Preview" style="margin: auto;">
+### Preview
+<a href='https://fredjoks.github.io/markdown-previewer/' targer='_blank'>
+    <img src="/images/markdown-preview.gif" alt="Random Quote Machine Preview" style="margin: auto;">
+</a>

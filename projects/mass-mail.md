@@ -23,20 +23,26 @@ PDF as an attachment, assigned by mailing list.
 ✔️ "send all" button
 ### See it in action 🎬
 1. `$ python app.py`
-![Home screen](/images/homescreen.png)
-  
+<img src="/images/homescreen.png" alt="Home screen" style="margin: auto;" width='800px'>
+
 2. **Select file** to work with
-![Select PDF file](/images/selectfile.gif)
+<img src="/images/selectfile.gif" alt="Select PDF file" style="margin: auto;" width='800px'>
+
 3. **Split file** into single page PDFs
-![Split file into single page PDFs](/images/split.gif)
+<img src="/images/split.gif" alt="Split file into single page PDFs" style="margin: auto;" width='800px'>
+
 4. Create mail **preview**
-![Create mail preview](/images/preview.gif)
+<img src="/images/preview.gif" alt="Create mail preview" style="margin: auto;" width='800px'>
+
 5. **Modify** mail and **send one by one**
-![Modify mail and send one by one](/images/onebyone.gif)
+<img src="/images/onebyone.gif" alt="Modify mail and send one by one" style="margin: auto;" width='800px'>
+
 6. **Send all**
-![Send all](/images/sendall.gif)
+<img src="/images/sendall.gif" alt="Send all" style="margin: auto;" width='800px'>
+
 7. See the results! ✨
-![Result](/images/result.gif)
+<img src="/images/result.gif" alt="Results" style="margin: auto;" width='800px'>
+
 ### What I learned:
 I learned how to go from an **idea to a working solution**.
 This project gave me good practice in **extracting data from filesystem**
