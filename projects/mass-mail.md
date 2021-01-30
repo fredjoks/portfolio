@@ -22,7 +22,8 @@ PDF as an attachment, assigned by mailing list.
 ✔️ option to confirm mails one by one\
 ✔️ "send all" button
 ### See it in action 🎬
-1. `$ python app.py`
+1. `$ python app.py`  
+`$ Type your password and presss enter: `
 <img src="/images/homescreen.png" alt="Home screen" style="margin: auto;" width='800px'>
 
 2. **Select file** to work with
@@ -41,7 +42,7 @@ PDF as an attachment, assigned by mailing list.
 <img src="/images/sendall.gif" alt="Send all" style="margin: auto;" width='800px'>
 
 7. See the results! ✨
-<img src="/images/result.gif" alt="Results" style="margin: auto;" width='800px'>
+<img src="/images/result.gif" alt="Results" style="margin: auto;" width='100%'>
 
 ### What I learned:
 I learned how to go from an **idea to a working solution**.
