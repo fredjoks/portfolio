@@ -54,6 +54,22 @@
     margin: 0 0 0 0;
   }
 
+  .headerCvIcon {
+    position: relative;
+  }
+
+  .headerCvIcon:after {
+    content: 'CV';
+    position: absolute;
+    font-size: .5rem;
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+  .headerCvIcon:hover:after {
+    font-size: 1rem;
+    left: 1.2rem;
+  }
+
   .headerImage {
     width: 7rem;
     height: 7rem;

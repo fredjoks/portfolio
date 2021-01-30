@@ -39,6 +39,7 @@ export default function Layout({ children, home }) {
               <ul className={styles.headerLinks}>
                 <li><a href='https://github.com/fredjoks' target='_blank'><i className="fab fa-github"></i></a></li>
                 <li><a href='https://www.linkedin.com/in/fredjoks/' target='_blank'><i className="fab fa-linkedin"></i></a></li>
+                <li><a href='https://gitconnected.com/fredjoks/resume' target='_blank'><i className={`far fa-file ${styles.headerCvIcon}`}></i></a></li>
               </ul>
             </div>
           </section>
