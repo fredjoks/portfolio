@@ -4,7 +4,7 @@ repo: 'https://github.com/fredjoks/mass-mail'
 live: ''
 date: '2021-01-26'
 ---
-**This project was made for a friend to save approximately 6 hours of work on monthly basis*
+**Personal project for a friend to save approximately 6 hours of work on monthly basis*
 ### Overview:
 An unknown accounting program outputs **multiple page PDF** file,
 which contains an invoice for every page.

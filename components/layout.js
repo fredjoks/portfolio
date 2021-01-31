@@ -39,7 +39,7 @@ export default function Layout({ children, home }) {
               <ul className={styles.headerLinks}>
                 <li><a href='https://github.com/fredjoks' target='_blank'><i className="fab fa-github"></i></a></li>
                 <li><a href='https://www.linkedin.com/in/fredjoks/' target='_blank'><i className="fab fa-linkedin"></i></a></li>
-                <li><a href='https://gitconnected.com/fredjoks/resume' target='_blank'><i className={`far fa-file ${styles.headerCvIcon}`}></i></a></li>
+                {/* <li><a href='https://gitconnected.com/fredjoks/resume' target='_blank'><i className={`far fa-file ${styles.headerCvIcon}`}></i></a></li> */}
               </ul>
             </div>
           </section>
@@ -102,7 +102,7 @@ export default function Layout({ children, home }) {
                     📘 <strong>Don't Make Me Think</strong> by Steve Krug
                   </li>
                   <li className={utilStyles.listItem}>
-                    🏆 <strong>#1</strong> at JA Eesti's hackathon <strong>"9h enterprise"</strong> as Team Leader
+                    🏆 <strong>#1</strong> at JA Eesti's <strong>"9h enterprise"</strong> as Team Leader
                   </li>
                   <li className={utilStyles.listItem}>
                     📘 <strong>Algorithms to Live By</strong> by Brian Christian, Tom Griffiths 

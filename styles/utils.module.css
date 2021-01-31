@@ -59,14 +59,8 @@
     width: 4rem;
   }
 
-  .liveBtn {
-    color: #5cb85c;
-    width: 1.25rem;
-  }
-
-  .repoBtn {
-    width: 1.5rem;
-    color: #F1502F
+  .projectLink {
+    font-size: 1.5rem;
   }
 
   .titles {
