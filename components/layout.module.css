@@ -5,14 +5,14 @@
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
   
   .header {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     width: 25rem;
     z-index: 2;
     padding: 0 !important;
@@ -40,7 +40,7 @@
   .headerCredentials {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding: 1rem 1rem 0;
   }
 
