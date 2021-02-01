@@ -25,7 +25,7 @@ export default function Post({ postData }) {
           </Link>)}
           {postData.live && (<Link href={postData.live}>
             <a target='_blank' className={utilStyles.projectLink}>
-              <i class="fas fa-play-circle"></i>
+              <i className="fas fa-play-circle"></i>
             </a>
           </Link>)}
         </div>
