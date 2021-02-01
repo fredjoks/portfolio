@@ -23,7 +23,6 @@ PDF as an attachment, assigned by mailing list.
 ✔️ "send all" button
 ### See it in action 🎬
 1. `$ python app.py`  
-`$ Type your password and presss enter: `
 <img src="/images/homescreen.png" alt="Home screen" style="margin: auto;" width='800px'>
 
 2. **Select file** to work with
