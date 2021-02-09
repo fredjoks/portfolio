@@ -9,9 +9,9 @@ body {
 }
 
 body {
-  background: url(../public/images/gradientabg1.svg) no-repeat;
+  background: url(../public/images/bg.webp) no-repeat;
+  background-attachment: fixed; 
   background-size: cover;
-  background-attachment: fixed;
 }
 
 * {

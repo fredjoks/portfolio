@@ -39,7 +39,6 @@ export default function Layout({ children, home }) {
               <ul className={styles.headerLinks}>
                 <li><a href='https://github.com/fredjoks' target='_blank'><i className="fab fa-github"></i></a></li>
                 <li><a href='https://www.linkedin.com/in/fredjoks/' target='_blank'><i className="fab fa-linkedin"></i></a></li>
-                {/* <li><a href='https://gitconnected.com/fredjoks/resume' target='_blank'><i className={`far fa-file ${styles.headerCvIcon}`}></i></a></li> */}
               </ul>
             </div>
           </section>
@@ -81,7 +80,7 @@ export default function Layout({ children, home }) {
           </p>
         </section>)}
       </header>
-      <main className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component} ${styles.projectComponent} ${styles.content}`}>
+      <main className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component}`}>
         {children}
         {!home && (
           <div className={styles.backToHome}>
@@ -92,7 +91,7 @@ export default function Layout({ children, home }) {
         )}
       </main>
       <div className={styles.break}></div>
-      <section className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component} ${styles.projectComponent} ${styles.content}`}>
+      <section className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component}`}>
             <h2 className={utilStyles.headingLg}>Recent activity</h2>
               <ul className={utilStyles.list}>
                   <li className={utilStyles.listItem}>
