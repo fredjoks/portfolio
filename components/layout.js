@@ -54,7 +54,7 @@ export default function Layout({ children, home }) {
                 </a>
               </Link>
               <div className={styles.headerCredentials}>
-                <h2 className>
+                <h2>
                   <Link href="/">
                     <a className={utilStyles.colorInherit}>{name}</a>
                   </Link>
