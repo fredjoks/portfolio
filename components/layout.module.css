@@ -21,6 +21,14 @@
     padding: 0 !important;
   }
 
+  .fullWidth {
+    width: 100%;
+  }
+
+  .column {
+    flex-direction: column
+  }
+
   .headerHomeContainer {
     display: flex;
     flex-direction: row;
@@ -28,6 +36,7 @@
 
   .headerContainer {
     display: flex;
+    width: 100%;
   }
 
   .headerHomeCredentials {
@@ -154,10 +163,6 @@
     flex-basis: 100%;
   }
 
-  .recent {
-    width: 100%;
-  }
-
 
   @media only screen and (max-width: 1024px) {
     .container {
@@ -178,4 +183,6 @@
     .headerHomeContainer {
       flex-direction: column;
     }
+
   }
+  

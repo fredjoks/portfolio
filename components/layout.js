@@ -9,7 +9,7 @@ export const siteTitle = 'Fred Jõks';
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${!home ? styles.column : ''}`}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={`${styles.header} ${utilStyles.headingMd} ${styles.headerComponent} ${styles.component}`}>
+      <header className={`${styles.header} ${utilStyles.headingMd} ${styles.headerComponent} ${styles.component} ${!home ? styles.fullWidth : ''}`}>
         {home ? (
           <section className={styles.headerHomeContainer}>
             <img
@@ -80,7 +80,7 @@ export default function Layout({ children, home }) {
           </p>
         </section>)}
       </header>
-      <main className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component}`}>
+      <main className={`${utilStyles.headingMd} ${styles.component}`}>
         {children}
         {!home && (
           <div className={styles.backToHome}>
@@ -91,7 +91,7 @@ export default function Layout({ children, home }) {
         )}
       </main>
       <div className={styles.break}></div>
-      <section className={`${utilStyles.headingMd} ${styles.padding1px} ${styles.component}`}>
+      <section className={`${utilStyles.headingMd} ${styles.component}`}>
             <h2 className={utilStyles.headingLg}>Recent activity</h2>
               <ul className={utilStyles.list}>
                   <li className={utilStyles.listItem}>
