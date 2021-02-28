@@ -37,8 +37,8 @@ export default function Layout({ children, home }) {
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
               <small className={utilStyles.lightText}>Junior Software Developer <a href='https://khk.ee/eriala/noorem-tarkvaraarendaja-veebispetsialist/' target='_blank'>@TartuKHK</a></small>
               <ul className={styles.headerLinks}>
-                <li><a href='https://github.com/fredjoks' target='_blank'><i className="fab fa-github"></i></a></li>
-                <li><a href='https://www.linkedin.com/in/fredjoks/' target='_blank'><i className="fab fa-linkedin"></i></a></li>
+                <li><a href='https://github.com/fredjoks' target='_blank'><i className={`fab fa-github ${utilStyles.icon}`}></i></a></li>
+                <li><a href='https://www.linkedin.com/in/fredjoks/' target='_blank'><i className={`fab fa-linkedin ${utilStyles.icon}`}></i></a></li>
               </ul>
             </div>
           </section>
@@ -68,9 +68,10 @@ export default function Layout({ children, home }) {
             <q>I am progress-oriented optimist.</q>
           </p>
           <p>
-            In my studies I have mostly worked with <strong>HTML</strong>, <strong>CSS</strong> and <strong>Javascript</strong>. 
-            My database management skills include <strong>PHP</strong> and <strong>MySQL</strong>. 
-            Automation with <strong>Python</strong> fascinates me.
+            During my studies I obtained best OOP and functional programming practices using <strong>ECMAScript 6</strong>. 
+            I have built some smaller web apps using <strong>React</strong>. 
+            My database management skills include <strong>PHP</strong>, <strong>MySQL</strong> and <strong>REST</strong>. 
+            I am looking forward to trying out new technologies.
           </p>
           <p>
             <strong>Visual Studio Code</strong> combined with <strong>Git Bash</strong> is my main tool.

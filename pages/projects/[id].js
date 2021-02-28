@@ -19,12 +19,12 @@ export default function Post({ postData }) {
         </div>
         <div className={utilStyles.btnGroup}>
           {postData.repo && (<Link href={postData.repo}>
-            <a target='_blank' className={utilStyles.projectLink}>
+            <a target='_blank' className={`${utilStyles.projectLink} ${utilStyles.icon}`}>
               <i className="fab fa-github"></i>
             </a>
           </Link>)}
           {postData.live && (<Link href={postData.live}>
-            <a target='_blank' className={utilStyles.projectLink}>
+            <a target='_blank' className={`${utilStyles.projectLink} ${utilStyles.icon}`}>
               <i className="fas fa-play-circle"></i>
             </a>
           </Link>)}
